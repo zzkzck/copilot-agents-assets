@@ -1,0 +1,4392 @@
+{
+  "title": "ENGG1040 Chapter 5: Sequences",
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ENGG1040 Chapter 5: Sequences（中文完整·配色区分·公式双适配·优化排版）"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "table_of_contents",
+      "table_of_contents": {
+        "color": "default"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5.1 数列 (Sequences)"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "A sequence is an ordered list of numbers written in a definite order. Each number in the"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "sequence is called a term. For examples,"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1, 4, 9, 16, 25, . . ."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "is a sequence with n-th term equals n2."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We can denote a sequence by {an}, where the index n is an integer, usually begins from"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n=1."
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 1. Let an = 1/n with n ≥1. It is called the harmonic sequence:"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1, 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2, 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3, 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4, 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5 . . ."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "It is also possible for {an} to begin from integers other than 1 or have finitely many terms."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 2. Let an = 2n + 1 with n = 0, 1, . . . , 10. It is the finite sequence:"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Recursive Sequence"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "A sequence can be defined explicitly by a formula for an as above. It can also be defined"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "recursively by expressing an in terms of previous terms. Such a sequence is called a recursive"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "sequence."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 3. The Fibonacci sequence is defined by:"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a0=1,"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a1=1,"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "an=an−1+an−2forn≥2"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The first few terms are:"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1, 1, 2, 3, 5, 8, 13, 21, 34, . . ."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chapter 5: Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Arithmetic Sequence"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "A sequence {an} is said to be an arithmetic sequence if the difference between consecutive"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "terms is constant. That is, for any n,"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "an−an−1=d"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "for some constant d. By applying the formula repeatedly, we have"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "an=an−1+d"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=(an−2+d)+d"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=an−2+2d"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=(an−3+d)+2d"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=an−3+3d"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "..."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "an=a1+(n−1)d."
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 4. Let {an} be an arithmetic sequence with first few terms 2, 5, 8, 11, . . . . Then"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a1=2andd=3.Thegeneraltermisgivenbyan=2+3(n−1)."
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Geometric Sequence"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "A sequence {an} is said to be a geometric sequence if there exists a constant r such that"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "an=ran−1"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "for any n ≥1. In other words, the ratio between consecutive terms is constant. Inductively,"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "wehavea2=a1r,a3=a1r2,a4=a1r3andinductively"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "an=a1rn−1."
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 5. Let {an} be a geometric sequence with first few terms 3, 6, 12, 24, . . . . Then"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a1=3andr=2.Thegeneraltermisgivenbyan=3·2n−1."
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5.2 数列的收敛性 (Convergence of Sequences)"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Convergence of Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "Asequence{an}issaidtoconvergetoalimitLifthetermsangetarbitrarilyclosetoLas"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n becomes large. It is denoted by"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=L"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The sequence {an} is also said to be convergent and tends to L as n tends to infinity."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chapter 5: Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "IfnosuchLexists,thesequence{an}issaidtobedivergentandthelimitdoesnotexist."
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The sequence {an} is said to diverge to infinity if the terms an get arbitrarily large as n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "becomes large. It is denoted by"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=∞"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Similarly, {an} is said to diverge to negative infinity if the terms an get arbitrarily large in"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "the negative direction as n becomes large. It is denoted by"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=−∞"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 6. Let an ="
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n. When n gets large, 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n gets arbitrarily close to 0. We can also"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "visualizeitfromthegraphbelow:Thepointsrepresentthevaluesofanforn=1,2,3,...."
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The points get arbitrarily close to the y-axis as going further to the right."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The sequence {an} converges to 0 and we write"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n=0."
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 7. Let an = n. When n gets large, an gets arbitrarily large too. It can be visualized"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "from its graph: The points go arbitrarily up as going further to the right."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chapter 5: Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-4"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The sequence {an} diverges to infinity and we write"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞n=∞."
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 8. Let an = (−1)n. It equals 1 for even n and −1 for odd n."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The sequence is oscillating between the value ±1 and does not approach to a single value."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hence the sequence {an} diverges and"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞n does not exist (DNE)."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chapter 5: Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-5"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 9. Let an = 3 for any positive integer n."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The sequence is constantly equal to 3. Hence the sequence converges to 3."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞an=lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞3=3."
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "Herearetwobasicresultsforlimitofsequences."
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Proposition 1. Let a be a constant."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": ""
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=∞"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "if a > 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=1"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "ifa=1"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=0"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "if −1 < a < 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "DNE"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "if a ≤−1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "Proposition2.Supposelim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞anandlim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞bn exist. Then for any k ∈R,"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞(an±bn)="
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0010"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "±"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0010"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞bn"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞(an·bn)="
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0010"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "·"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0010"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞bn"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "bn"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "="
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞bn"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(Iflim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞bn̸=0)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞kan=k"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0010"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞ak"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n="
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0010"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011k"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(Iflim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞an > 0)"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chapter 5: Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-6"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 10."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞2n=∞."
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞(−0.5)n=0."
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 11. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u00002 + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0001"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2 + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0013"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n→∞2+lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=2+0"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=2"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 12. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1 + (0.5)n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u00133"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1 + (0.5)n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u00133"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "="
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1 + (0.5)n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u00133"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "="
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞(1 + (0.5)n)"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "!3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "="
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1 + 0"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u00133"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=23=8"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 13. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n −n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0013"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Observe that 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n tends to 0 and n2 tends to infinity as n tends to infinity. Hence, 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n −n2 tends"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "to negative infinity."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0012 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n −n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0013"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=−∞."
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Indeterminate forms"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "Whilecomputingthelimitofasequence,onemightencountersituationssuchas"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "0"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "0 , ±∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "±∞, 0 · (±∞), ∞−∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "These are called indeterminate forms. In this case, we try to simplify or alter the sequence"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "into another form."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 14. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "−2n + 7"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4n2 −1 ."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "−2n + 7"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "4n2−1=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "−2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n + 7"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4 −1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=0+0"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "4−0=0"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Chapter 5: Sequences"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "5-7"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In this example above, both the numerator and denominator approach to infinity."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "computation shows that their ratio approaches to zero, meaning that the denominator"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "approach to infinity much faster."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 15. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2n2 + 3n + 2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3n2 −n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2n2 + 3n + 2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3n2 −n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2 + 3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n + 2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3 −1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=2+0+0"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3 −0"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=2"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 16. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4n3 + 2n2 −n + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + 5n + 3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4n3 + 2n2 −n + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + 5n + 3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4n + 2 −1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1 + 5"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n + 3"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=∞"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 17. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\u0000√n+1−√n"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0001"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n+1−√n=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(√n+1−√n)(√n+1+√n)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√n+1+√n"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "(n + 1) −n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√n+1+√n"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√n+1+√n=0"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example 18. Evaluate lim"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\u0010√"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + n −n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\u0011"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "."
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "p"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "n2+n−n=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "("
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + n −n)("
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + n + n)"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + n + n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "(n2 + n) −n2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + n + n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "√"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n2 + n + n"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=lim"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n→∞"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "q"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1 + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "n + 1"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "=1"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    }
+  ]
+}

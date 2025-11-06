@@ -1,0 +1,1990 @@
+{
+  "title": "ENGG1040 Chapter 4: Vectors（中文完整·配色区分·公式双适配·优化排版）",
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ENGG1040 — Chapter 4: 向量 (Vectors)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "table_of_contents",
+      "table_of_contents": {
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "排版规范：定义/结论=黄底；定理/性质=蓝底；例题=紫底；技巧=绿底；注意=红底。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 重点以"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "粗体"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "/"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "斜体"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "/"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "红字"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "强调；所有公式**单独一行**的块级 equation 展示。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📌"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4.1 什么是向量 (What is a Vector?)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定义 (Definition)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "既有"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "大小 magnitude"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "又有"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "方向 direction"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "的量。常用粗体/箭头记号表示，长度记作 |v| 或 ∥v∥。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v=(2,-1)\\in\\mathbb R^2\\ \\Rightarrow\\ \\text{右移 2、下移 1}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\overrightarrow{AB}=(x_2-x_1,\\ y_2-y_1)\\ (\\text{位置向量/位移})"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "常用记号："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "(2,-1)=⟨2,-1⟩=[2,-1]={2\\choose -1}=2\\,\\hat i-\\hat j"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4.2 基本运算 (Basic Vector Operations)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "R^n 中加/减/数乘："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec a+\\vec b=(a_1+b_1,\\ldots,a_n+b_n)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec a-\\vec b=(a_1-b_1,\\ldots,a_n-b_n)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "k\\vec a=(ka_1,\\ldots,ka_n)\\ (k\\in\\mathbb R)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "性质 (Properties)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(\\vec u+\\vec v)+\\vec w=\\vec u+(\\vec v+\\vec w)\\ (\\text{结合})"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v+\\vec w=\\vec w+\\vec v\\ (\\text{交换})"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v+\\vec 0=\\vec v,\\ \\ 1\\vec v=\\vec v,\\ \\ 0\\vec v=\\vec 0"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(\\alpha+\\beta)\\vec v=\\alpha\\vec v+\\beta\\vec v,\\ \\ \\alpha(\\vec v+\\vec w)=\\alpha\\vec v+\\alpha\\vec w"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 1："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "设 \u000bec v=(1,1), \u000bec w=(-1,2)。求 \u000bec v+\u000bec w,\\ \u000bec v-\u000bec w,\\ 2\u000bec v,\\ -\tfrac12\u000bec v"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v+\\vec w=(0,3),\\ \\vec v-\\vec w=(2,-1),\\ 2\\vec v=(2,2),\\ -\\tfrac12\\vec v=(-\\tfrac12,-\\tfrac12)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "位置向量与平行四边形："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "A(x_1,y_1),B(x_2,y_2),C(x_3,y_3),D(x_4,y_4)。若 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\\overrightarrow{AB}=\\overrightarrow{DC}"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 则 ABCD 是平行四边形。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 2："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "A=(1,0), B=(3,3), C=(2,4), D=(0,1)。证 ABCD 为平行四边形。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\overrightarrow{AB}=(2,3),\\ \\overrightarrow{DC}=(2,3)\\Rightarrow ABCD\\ \\text{是平行四边形}"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4.3 长度与点积 (Length & Dot Product)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "长度 (norm)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "∥\u000bec a∥=\\sqrt{\\sum a_i^2}"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{在 }\\mathbb R^2: \\ \\|\\vec a\\|=\\sqrt{a_1^2+a_2^2};\\ \\text{在 }\\mathbb R^3: \\ \\|\\vec a\\|=\\sqrt{a_1^2+a_2^2+a_3^2}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "点积 (dot product)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec a\\cdot\u000bec b=\\sum a_i b_i"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\mathbb R^2: \\ a_1b_1+a_2b_2;\\ \\mathbb R^3: \\ a_1b_1+a_2b_2+a_3b_3"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "范数与点积的关系 (蓝底性质)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\|\\vec v\\|\\ge0,\\ \\|\\vec v\\|=0\\Leftrightarrow \\vec v=\\vec 0"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\|\\alpha\\vec v\\|=|\\alpha|\\,\\|\\vec v\\|"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\|\\vec v\\|=\\sqrt{\\vec v\\cdot\\vec v}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{三角不等式： }\\|\\vec v+\\vec w\\|\\le\\|\\vec v\\|+\\|\\vec w\\|"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "单位向量 (unit vector)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "长度 1；常用 \\^ 表示，如 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\\hat i,\\hat j,\\hat k"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 3："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec v=(1,2,-2)。求 ∥\u000bec v∥ 及与 \u000bec v 反向的单位向量。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\|\\vec v\\|=\\sqrt{1^2+2^2+(-2)^2}=3"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{同向单位向量 }\\frac{\\vec v}{\\|\\vec v\\|}=\\left(\\tfrac13,\\tfrac23,-\\tfrac23\\right),\\ \\text{反向单位向量 }-\\tfrac13\\vec v"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "点积的性质与夹角："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec u\\cdot\\vec v=\\vec v\\cdot\\vec u\\ (\\text{交换})"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(\\alpha\\vec u+\\beta\\vec v)\\cdot\\vec w=\\alpha(\\vec u\\cdot\\vec w)+\\beta(\\vec v\\cdot\\vec w)\\ (\\text{分配})"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v\\cdot\\vec v=\\|\\vec v\\|^2"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v\\cdot\\vec w=\\|\\vec v\\|\\,\\|\\vec w\\|\\cos\\theta\\ \\Rightarrow\\ \\cos\\theta=\\dfrac{\\vec v\\cdot\\vec w}{\\|\\vec v\\|\\,\\|\\vec w\\|}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "正交与号："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " \u000bec v\\perp \u000bec w\\iff \u000bec v\\cdot\u000bec w=0；\\ \u000bec v\\cdot\u000bec w>0\\Rightarrow\theta<90^\\circ；<0\\Rightarrow\theta>90^\\circ"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 4："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "标准基的点积；例题 5：两向量夹角"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\hat i\\cdot\\hat i=1,\\ \\hat i\\cdot\\hat j=0,\\ \\hat j\\cdot\\hat j=1,\\ \\hat i\\cdot\\hat k=0,\\ \\hat j\\cdot\\hat k=0,\\ \\hat k\\cdot\\hat k=1"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v=\\hat i+\\hat j+3\\hat k,\\ \\vec w=2\\hat i-\\hat j-2\\hat k,\\ \\cos\\theta=\\dfrac{-5}{3\\sqrt{11}},\\ \\theta=\\arccos\\!\\left(-\\tfrac{5}{3\\sqrt{11}}\\right)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 6："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "若 ∥\u000bec v∥=∥\u000bec w∥，证明 (\u000bec v+\u000bec w)\\cdot(\u000bec v-\u000bec w)=0；几何解释：菱形对角线互相垂直。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(\\vec v+\\vec w)\\cdot(\\vec v-\\vec w)=\\|\\vec v\\|^2-\\|\\vec w\\|^2=0"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 7（圆周角 90°）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "圆心 O，直径 AB，证 ∠ACB=90°（向量法）。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\overrightarrow{AC}\\cdot\\overrightarrow{BC}=-(\\overrightarrow{AO})\\cdot(\\overrightarrow{AO})+(\\overrightarrow{OC})\\cdot(\\overrightarrow{OC})=0"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4.4 投影向量 (Projection)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定义：把 \u000bec v 表示为 \u000bec v=\u000bec v_1+\u000bec v_2，其中 \u000bec v_1//\u000bec w、\\ \u000bec v_2\\perp\u000bec w。\\ \u000bec v_1=\\operatorname{proj}_{\u000bec w}\u000bec v。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\operatorname{proj}_{\\vec w}\\vec v=\\left(\\dfrac{\\vec v\\cdot\\vec w}{\\vec w\\cdot\\vec w}\\right)\\vec w=\\dfrac{\\vec v\\cdot\\vec w}{\\|\\vec w\\|^2}\\,\\vec w"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 8："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec v=(3,2) 在 \u000bec w=(5,-5) 上的投影；并写出 \u000bec v=\u000bec v_1+\u000bec v_2。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\operatorname{proj}_{\\vec w}\\vec v=\\tfrac{(3,2)\\cdot(5,-5)}{\\|(5,-5)\\|^2}(5,-5)=\\tfrac{5}{50}(5,-5)=(\\tfrac12,-\\tfrac12)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec v_2=\\vec v-\\vec v_1=(\\tfrac52,\\tfrac52)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 9："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "点 A=(3,7) 到直线 L:y=x 的最近点 B。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec w=(1,1)\\ //\\ L,\\ \\overrightarrow{OB}=\\operatorname{proj}_{\\vec w}\\overrightarrow{OA}=\\tfrac{(3,7)\\cdot(1,1)}{(1,1)\\cdot(1,1)}(1,1)=(5,5)\\Rightarrow B=(5,5)"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4.5 叉积与行列式 (Cross Product & Determinant)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2×2 与 3×3 行列式 (determinant)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\begin{vmatrix}a&b\\\\ c&d\\end{vmatrix}=ad-bc"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\begin{vmatrix}a_1&a_2&a_3\\\\ b_1&b_2&b_3\\\\ c_1&c_2&c_3\\end{vmatrix}=a_1\\begin{vmatrix}b_2&b_3\\\\ c_2&c_3\\end{vmatrix}-a_2\\begin{vmatrix}b_1&b_3\\\\ c_1&c_3\\end{vmatrix}+a_3\\begin{vmatrix}b_1&b_2\\\\ c_1&c_2\\end{vmatrix}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3D 叉积 (仅定义于 \\mathbb R^3)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec a\\times\\vec b=\\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\ a_1&a_2&a_3\\\\ b_1&b_2&b_3\\end{vmatrix}=(a_2b_3-a_3b_2,\\ a_3b_1-a_1b_3,\\ a_1b_2-a_2b_1)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "标准基的叉积：\\ \\hat i\times\\hat j=\\hat k,\\ \\hat j\times\\hat k=\\hat i,\\ \\hat k\times\\hat i=\\hat j；相反次序取负；同向为 0。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 12："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "设 \u000bec a=2\\hat i+3\\hat j+5\\hat k,\\ \u000bec b=\\hat i+2\\hat j+3\\hat k，求 \u000bec a\times\u000bec b。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec a\\times\\vec b=\\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\ 2&3&5\\\\ 1&2&3\\end{vmatrix}=-\\hat i-\\hat j+\\hat k"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "叉积性质与几何意义："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec a\\times\\vec a=\\vec 0,\\ \\ \\vec a\\times\\vec b=-(\\vec b\\times\\vec a)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(\\alpha\\vec a+\\beta\\vec b)\\times\\vec c=\\alpha(\\vec a\\times\\vec c)+\\beta(\\vec b\\times\\vec c)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\|\\vec a\\times\\vec b\\|=\\|\\vec a\\|\\,\\|\\vec b\\|\\sin\\theta=\\text{以 }\\vec a,\\vec b\\text{ 为邻边的平行四边形面积}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(\\vec a\\times\\vec b)\\cdot\\vec a=(\\vec a\\times\\vec b)\\cdot\\vec b=0\\ \\Rightarrow\\ \\vec a\\times\\vec b\\perp\\vec a,\\vec b"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "结论："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "非零叉积 ⇔ 两向量不平行；零叉积 ⇔ 同/反向或有零向量。右手定则确定方向。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 13："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "平面 P 过 A=(1,2,1), B=(1,-1,0), C=(2,3,2)。求 P 的法向量。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\overrightarrow{AB}=(0,-3,-1),\\ \\overrightarrow{AC}=(1,1,1),\\ \\overrightarrow{AB}\\times\\overrightarrow{AC}=(-2,-1,3) \\perp P"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "三重积 (triple product) 与体积："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\vec a\\cdot(\\vec b\\times\\vec c)=\\begin{vmatrix}a_1&a_2&a_3\\\\ b_1&b_2&b_3\\\\ c_1&c_2&c_3\\end{vmatrix}=\\text{以 }\\vec a,\\vec b,\\vec c\\text{ 为邻边的平行六面体体积(带符号)}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 14："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "综合：平行四边形顶点、面积与单位法向量；平面方程；以及平行六面体体积。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "D=(2,3,0),\\ \\overrightarrow{BA}=(1,1,0),\\ \\overrightarrow{BC}=(0,1,-1)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\overrightarrow{BA}\\times\\overrightarrow{BC}=(-1,1,1),\\ \\text{Area}=\\sqrt{3},\\ \\hat n=\\tfrac{1}{\\sqrt3}(-1,1,1)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{平面 }(1,1,1)\\cdot(x-1,y-1,z-1)=0\\ \\Rightarrow\\ -x+y+z=1"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\overrightarrow{BE}=(1,3,-6),\\ \\text{Vol}=|(1,3,-6)\\cdot(-1,1,1)|=4"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4.6 向量值函数（参数方程）"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定义：\u000bec r(t)=[x(t),y(t),z(t)]。分量函数 (component functions) 与参数 t 组成曲线；可消元得到隐式方程。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 15："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec r(t)=(e^t,\\ t,\\ \\sqrt{1+t^2}) \\in \\mathbb R^3"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x(t)=e^t,\\ y(t)=t,\\ z(t)=\\sqrt{1+t^2}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 16（消元绘图）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec r(t)=(t^2,\\ 2t-1)\\ 在平面上为抛物线。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "t=\\tfrac{y+1}{2}\\Rightarrow x=\\left(\\tfrac{y+1}{2}\\right)^2=\\tfrac14(y+1)^2"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 17（圆）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec r(t)=(2\\cos t^\\circ,\\ 2\\sin t^\\circ),\\ 0\\le t\\le180"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x^2+y^2=4,\\ t\\uparrow: x:2\\to-2,\\ y:0\\to2\\to0\\ (\\text{半圆})"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 18（螺旋线）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec r(t)=(\\cos 360t^\\circ,\\ \\sin 360t^\\circ,\\ t),\\ 0\\le t\\le1"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(x,y)\\text{ 在单位圆上匀速旋转，}z=t\\text{ 上升 }\\Rightarrow\\ \\text{螺旋线 (helix)}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 19（直线参数方程）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\u000bec r(t)=(2+t,\\ 4-2t,\\ -1)= (2,4,-1)+t(1,-2,0)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{过点 }(2,4,-1)\\ 且\\ 平行于\\ (1,-2,0)\\ 的直线"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "小结：向量的代数/几何、点积与夹角、投影、叉积与体积、参数方程与典型曲线（圆/螺旋/直线）。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📚"
+        },
+        "color": "yellow_background"
+      }
+    }
+  ]
+}

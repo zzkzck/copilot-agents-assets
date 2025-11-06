@@ -1,0 +1,1880 @@
+{
+  "title": "ENGG1040 Chapter 1: Functions（中文完整·配色区分·公式双适配·优化排版）",
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ENGG1040 — Chapter 1: 函数 (Functions)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "table_of_contents",
+      "table_of_contents": {
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "排版规范：定义/结论=黄底；定理/性质=蓝底；例题=紫底；技巧=绿底；注意=红底。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 重点以"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "粗体"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "/"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "斜体"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "/"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "红字"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "强调；所有公式分行独立展示，不挤在一行。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📌"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1.1 代数回顾（Review on Algebra）"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "恒等式 (Identities)"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(a\\pm b)^2=a^2\\pm2ab+b^2"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^2-b^2=(a+b)(a-b)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(a+b)^3=a^3+3a^2b+3ab^2+b^3"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(a-b)^3=a^3-3a^2b+3ab^2-b^3"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^3+b^3=(a+b)(a^2-ab+b^2)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^3-b^3=(a-b)(a^2+ab+b^2)"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "指数律 (Exponent Laws)"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^0=1\\ (a\\ne0)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^m\\cdot a^n=a^{m+n}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{a^m}{a^n}=a^{m-n}\\ (a\\ne0)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(a^m)^n=a^{mn}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(ab)^n=a^n b^n"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^{-m}=\\frac{1}{a^m}\\ (a\\ne0)"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "有理指数 (Rational Exponent)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "当分母"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "为偶数"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "需保证被开方数非负。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^{m/n}=\\sqrt[n]{a^m}\\ (n\\in\\mathbb N)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a^{1/n}=\\sqrt[n]{a},\\ a^{p/q}=\\sqrt[q]{a^p}"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "有理化（Rationalization）"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "常见：分母含根式→乘以共轭 (conjugate)。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧰"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 1（分式有理化）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{\\sqrt{2}}{\\sqrt{3}}\\cdot\\frac{\\sqrt{3}}{\\sqrt{3}}=\\frac{\\sqrt{6}}{3}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 2（含二项式根）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{4-\\sqrt{3}}{5+\\sqrt{3}}=\\frac{(4-\\sqrt{3})(5-\\sqrt{3})}{(5+\\sqrt{3})(5-\\sqrt{3})}=\\frac{23-9\\sqrt{3}}{22}"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "优先因式分解、配方法；根式优先乘共轭。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "化简后代回检验 (substitution check) 等价性。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意事项"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "red_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "偶次根真数需"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "≥0"
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "分母绝不能为 0，列出排除值。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1.2 差商（Difference Quotient）"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定义：割线斜率雏形"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (difference quotient)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{f(x)-f(a)}{x-a}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{f(a+h)-f(a)}{h}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（多项式）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{x^3-a^3}{x-a}=x^2+ax+a^2"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（根式函数）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "g(x)=\\frac{1}{\\sqrt{x+1}},\\ \\frac{g(a+h)-g(a)}{h}=-\\frac{1}{\\sqrt{a+h+1}\\,\\sqrt{a+1}(\\sqrt{a+1}+\\sqrt{a+h+1})}"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "构造可约因子 (如 x−a 或 h)；根式乘共轭消 0/0。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "目标：令 h→0 时表达式有界且可化简。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意事项"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "red_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "不等价变形会改变极限，谨慎约去可能为 0 的因子。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1.3 集合(Set)与函数(Function)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "集合与区间："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "(a,b), [a,b], (a,b], [a,b)；交∩、并∪、差\\。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "函数定义 (Mapping)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " f: D→C；值域为实际像集 Range。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "隐含/自然定义域："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "分母≠0、对数真数>0、偶次根真数≥0"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（定义域）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\log(x^2-3x-10):\\ x^2-3x-10>0\\Rightarrow x>5\\ \\text{或}\\ x<-2"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "函数运算与复合 (Operations & Composition)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "(g\\circ f)(x)=g(f(x))"
+      }
+    },
+    {
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "复合的定义域 = 使 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "x\\in D_f"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 且 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "f(x)\\in D_g"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 的全部 x"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "default"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "单调性/奇偶性 (Monotonicity & Parity)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f\\ \\text{递增}: a<b\\Rightarrow f(a)\\le f(b);\\ 递减: a<b\\Rightarrow f(a)\\ge f(b)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{偶函数}: f(-x)=f(x);\\ \\text{奇函数}: f(-x)=-f(x)"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "定义域题：列约束→区间并集；复合题：先内后外逐层限制。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意事项"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "red_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "切勿混淆陪域 (Codomain) 与值域 (Range)。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1.4 更多函数例子 (More Examples)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "幂函数 (Power)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "f(x)=x^a"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "分段函数 (Piecewise)：边界开闭与函数值要分清。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "绝对值函数 (Absolute Value)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "|x|=\\begin{cases}x,&x\\ge0\\\\-x,&x<0\\end{cases}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "|x+y|\\le|x|+|y|\\ (\\text{三角不等式})"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（绝对值不等式）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "|2x-3|\\le7\\ \\Rightarrow\\ -2\\le x\\le5"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（分段化简）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=|x-2|+|x+2|=\\begin{cases}2x,&x\\ge2\\\\4,&-2\\le x<2\\\\-2x,&x<-2\\end{cases}"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "绝对值统一分段 (piecewise)；图像法：|f(x)| 上翻；f(|x|) 关于 y 轴镜像。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意事项"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "red_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "分段边界与函数值的处理；连续/间断点要注明。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1.5 不等式 (Inequalities)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "二次不等式：移项→因式分解→号表/图像判断。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧭"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（标准二次）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "4x^2+5\\ge12x\\ \\Leftrightarrow\\ (2x-1)(2x-5)\\ge0\\Rightarrow x\\le1/2\\ \\text{或}\\ x\\ge5/2"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "分式不等式：统一到一侧通分，画数轴号表；恒正因子可安全乘除。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧭"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（分式）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{2x-1}{x+1}<1\\ \\Leftrightarrow\\ \\frac{x-2}{x+1}<0\\Rightarrow -1<x<2,\\ x\\ne-1"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "构造号表：零点与分母零点为关键点。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "能构造恒正因子 (平方/模平方) 时可乘除而不变号。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意事项"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "red_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "乘以负量会翻号；分母为 0 必排除。"
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "小结：恒等式/指数律/有理指数、有理化、差商、集合与函数、常见函数、二次/分式不等式。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📚"
+        },
+        "color": "yellow_background"
+      }
+    }
+  ]
+}

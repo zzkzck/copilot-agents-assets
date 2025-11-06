@@ -1,0 +1,1534 @@
+{
+  "title": "ENGG1040 Chapter 2: Polynomials（中文完整·配色区分·公式双适配·优化排版）",
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ENGG1040 — Chapter 2: 多项式 (Polynomials)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "table_of_contents",
+      "table_of_contents": {
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "排版规范：定义/结论=黄底；定理/性质=蓝底；例题=紫底；技巧=绿底；注意=红底。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 重点以"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "粗体"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "/"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "斜体"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "/"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "红字"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "强调；全部公式采用“单独一行”的块级 equation 展示。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📌"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2.1 求和符号 Summation (Σ)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定义 (Definition)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "对整数 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "m≤n"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "，求和记号 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Σ"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 表示从下界到上界的项之和。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=m}^{n} a_i = a_m + a_{m+1} + \\cdots + a_n"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "性质 (Properties)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=m}^{n}(a_i\\pm b_i)=\\sum_{i=m}^{n}a_i \\pm \\sum_{i=m}^{n}b_i"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=m}^{n} r\\,a_i = r\\sum_{i=m}^{n} a_i\\quad (r\\in\\mathbb R)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=m}^{n} r = r\\,(n-m+1)\\quad (r\\in\\mathbb R)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=m+p}^{n+p} a_i = \\sum_{i=m}^{n} a_{i+p}\\quad (p\\in\\mathbb Z)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 1："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "计算 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Σ"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 的典型值。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=3}^{7} i = 3+4+5+6+7 = 25"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sum_{i=1}^{4} i^2 = 1^2+2^2+3^2+4^2 = 30"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "指标平移 (index shift) 可把复杂上/下限化为标准形式。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "线性性：分拆/合并求和式以便简化。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2.2 多项式 Polynomial 的基本概念"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定义 (Definition)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "单变量多项式："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=a_n x^n + a_{n-1}x^{n-1}+\\cdots+a_1 x + a_0 = \\sum_{i=0}^{n} a_i x^i"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "a_i\\in\\mathbb R,\\ a_n\\ne 0,\\ \\deg f = n\\ (\\text{次数}),\\ a_n\\ (\\text{首项系数})"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "结论："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "非零 n 次实系数多项式的**实根**(real roots)至多 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "n"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 个。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "一次与二次 (Linear & Quadratic)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "一次 (Linear)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=mx+c\\ (m\\ne 0)\\quad \\text{斜率 slope }=m,\\ \\text{纵截距 y-intercept }=c"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "二次 (Quadratic)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=ax^2+bx+c\\ (a\\ne 0)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{根： }x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{判别式}\\ \\Delta=b^2-4ac"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "判别式与根的个数 (蓝底性质)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\Delta<0:\\ \\text{无实根 (irreducible over }\\mathbb R)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\Delta=0:\\ \\text{一重实根 (double real root)}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\Delta>0:\\ \\text{两实根 (two distinct real roots)}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 2："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "判别式与因式分解"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=x^2+3x+2:\\ \\Delta=3^2-4\\cdot1\\cdot2=1>0\\Rightarrow (x+1)(x+2)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=x^2+3x+4:\\ \\Delta=3^2-4\\cdot1\\cdot4=-7<0\\Rightarrow \\text{无实根，不可约}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 4："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "配方法求极值 (completing the square)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=-x^2+4x-7=-(x^2-4x+7)=-(x-2)^2-3\\le -3"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{最大值}= -3\\ \\text{于}\\ x=2,\\ \\text{无最小值}"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "二次的\\ "
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "配方法"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": true,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " 可直接读出顶点与极值。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "判别式同时用于判断可约性(reducible)与根的个数。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2.3 多项式的因式分解 Factorization"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定理 (Theorem)：余式定理 (Remainder Theorem)"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{若 } f(x) \\text{ 除以 } x-c,\\ \\text{余式为 } f(c)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 5："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "f(x)=2x^2+x-1 除以 x+2 的余式"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(-2)=5,\\ \\text{且 } f(x)=(x+2)(2x-3)+5"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "定理 (Theorem)：因式定理 (Factor Theorem)"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x-c\\ \\text{是 } f(x) \\text{ 的因式} \\iff f(c)=0"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 6："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "分解 f(x)=-2x^3+4x^2-6"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(-1)=0\\Rightarrow x+1 \\text{ 为因式}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "f(x)=(x+1)(-2x^2+6x-6),\\ \\Delta_{-2x^2+6x-6}=-12<0\\Rightarrow \\text{二次因子不可约}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 7："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "分解 g(x)=x^3-x^2-8x+12，并指出重数 (multiplicity)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "g(2)=0\\Rightarrow x-2 \\text{ 为因式}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "g(x)=(x-2)(x^2+x-6)=(x-2)^2(x+3)\\Rightarrow x=2 \\text{重数 }2,\\ x=-3 \\text{重数 }1"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 8："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "已知 h(x)=(x+1)^2(x-5)^6(x^2+x+1000)^9，求实根与重数"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x^2+x+1000 \\text{ 无实根 }\\Rightarrow \\text{实根仅 } x=-1(\\text{重 }2),\\ x=5(\\text{重 }6)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 9："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "分解 x^4-1"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x^4-1=(x^2+1)(x^2-1)=(x^2+1)(x+1)(x-1)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "命题 (Proposition)："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "任一非常数实系数多项式可分解为一次与不可约二次之积。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题 Example 10："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "分解 x^4+1 (在实数域) "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x^4+1=(x^2+\\sqrt{2}x+1)(x^2-\\sqrt{2}x+1)"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "通用流程：试根 → 因式定理 → 多项式长除 → 判别式/配方法。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "重数：若 (x-c)^k | f(x) 且 (x-c)^{k+1} ∤ f(x)，则 c 的重数为 k。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "注意事项"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "red_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "“在实数域不可约” ≠ “在复数域不可约”。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本章小结：Σ 性质、多项式的定义与根的上界、一次/二次与判别式、极值的配方法、余式/因式定理、常见分解与重数、实域分解结构。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📚"
+        },
+        "color": "yellow_background"
+      }
+    }
+  ]
+}

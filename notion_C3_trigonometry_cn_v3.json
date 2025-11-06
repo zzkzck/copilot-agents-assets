@@ -1,0 +1,1603 @@
+{
+  "title": "ENGG1040 Chapter 3: Trigonometry（中文完整·配色区分·公式双适配·优化排版）",
+  "children": [
+    {
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ENGG1040 — Chapter 3: 三角 (Trigonometry)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "blue",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "table_of_contents",
+      "table_of_contents": {
+        "color": "default"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "排版规范：所有公式分行独立展示；定义/结论=黄底；定理/性质=蓝底；例题=紫底；技巧=绿底；注意=红底。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📌"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.1 弧度（Radian）"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "弧长/面积/换算"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (arclength/area/conversion)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "s=r\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "A=\\frac{1}{2}r^2\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "360^\\circ=2\\pi\\ \\text{rad},\\ 180^\\circ=\\pi\\ \\text{rad},\\ 90^\\circ=\\tfrac{\\pi}{2}\\ \\text{rad}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "x^\\circ=\\frac{\\pi x}{180}\\ \\text{rad},\\ y\\ \\text{rad}=\\frac{180y}{\\pi}^\\circ"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "若未写单位，默认弧度；先化到弧度再使用微积分/恒等式。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.2 三角函数定义与扩展"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "直角三角形定义："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin\\theta=\\frac{\\text{opp}}{\\text{hyp}},\\ \\cos\\theta=\\frac{\\text{adj}}{\\text{hyp}},\\ \\tan\\theta=\\frac{\\text{opp}}{\\text{adj}}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "单位圆推广："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "点坐标为 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "(\\cos\\theta,\\sin\\theta)"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📘"
+        },
+        "color": "yellow_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "六函数关系与定义域："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta},\\ \\cot\\theta=\\frac{\\cos\\theta}{\\sin\\theta},\\ \\sec\\theta=\\frac{1}{\\cos\\theta},\\ \\csc\\theta=\\frac{1}{\\sin\\theta}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin\\theta=0\\iff\\theta=k\\pi;\\ \\cos\\theta=0\\iff\\theta=\\tfrac{\\pi}{2}+k\\pi\\ (k\\in\\mathbb Z)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CAST 象限正负：I:All，II:S，III:T，IV:C。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧭"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "特殊角 (special angles)：30^\\circ/45^\\circ/60^\\circ 的 \\sin/\\cos/\tan 值。"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.3 三角函数图像与变换"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "一般式与参数："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "y=a\\sin(bx+c)+d\\ \\text{或}\\ a\\cos(bx+c)+d"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\text{中心线 }y=d,\\ \\text{振幅 }|a|,\\ \\text{周期 }\\tfrac{2\\pi}{b},\\ \\text{相位移 }-\\tfrac{c}{b}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（作图变换）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " y=3\\cos(2x+1)+4"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "先内后外：先平移/伸缩，再处理系数 a 与上移 d。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "利用奇偶与周期快速扩展图像。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.4 三角恒等式 (Identities)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "勾股恒等式："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin^2\\theta+\\cos^2\\theta=1"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\tan^2\\theta+1=\\sec^2\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "1+\\cot^2\\theta=\\csc^2\\theta"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "奇偶/余函数/周期："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin(-\\theta)=-\\sin\\theta,\\ \\cos(-\\theta)=\\cos\\theta,\\ \\tan(-\\theta)=-\\tan\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin(\\tfrac{\\pi}{2}-\\theta)=\\cos\\theta,\\ \\cos(\\tfrac{\\pi}{2}-\\theta)=\\sin\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin(\\theta+2n\\pi)=\\sin\\theta,\\ \\cos(\\theta+2n\\pi)=\\cos\\theta,\\ \\tan(\\theta+n\\pi)=\\tan\\theta"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "和差公式："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin(\\alpha\\pm\\beta)=\\sin\\alpha\\cos\\beta\\pm\\cos\\alpha\\sin\\beta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\cos(\\alpha\\pm\\beta)=\\cos\\alpha\\cos\\beta\\mp\\sin\\alpha\\sin\\beta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "二倍角/半角："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin 2\\theta=2\\sin\\theta\\cos\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\cos 2\\theta=\\cos^2\\theta-\\sin^2\\theta=2\\cos^2\\theta-1=1-2\\sin^2\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\tan 2\\theta=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin^2\\tfrac{\\theta}{2}=\\tfrac{1-\\cos\\theta}{2},\\ \\cos^2\\tfrac{\\theta}{2}=\\tfrac{1+\\cos\\theta}{2}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "积化和差/和差化积："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin\\alpha\\sin\\beta=\\tfrac{1}{2}[\\cos(\\alpha-\\beta)-\\cos(\\alpha+\\beta)]"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\cos\\alpha\\cos\\beta=\\tfrac{1}{2}[\\cos(\\alpha-\\beta)+\\cos(\\alpha+\\beta)]"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin\\alpha\\cos\\beta=\\tfrac{1}{2}[\\sin(\\alpha+\\beta)+\\sin(\\alpha-\\beta)]"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\cos\\alpha\\sin\\beta=\\tfrac{1}{2}[\\sin(\\alpha+\\beta)-\\sin(\\alpha-\\beta)]"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "典型证明/化简例："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin 3\\theta=3\\sin\\theta-4\\sin^3\\theta"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\cos 2\\theta=\\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta}"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "将 tan/cot/sec/csc 统一化到 sin、cos 两元；需要时用积化和差。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "半角要按象限选 ± 号 (CAST)。"
+                  },
+                  "annotations": {
+                    "bold": true,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "red"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.5 反三角函数 (Inverse Trig)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "主值域 (principal values)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\arcsin:[-1,1]\\to[-\\tfrac{\\pi}{2},\\tfrac{\\pi}{2}]"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\arccos:[-1,1]\\to[0,\\pi]"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\arctan:(-\\infty,\\infty)\\to(-\\tfrac{\\pi}{2},\\tfrac{\\pi}{2})"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题（主值判断与复合）："
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\arcsin\\tfrac{1}{\\sqrt{2}}=\\tfrac{\\pi}{4},\\ \\arccos(-\\tfrac{1}{2})=\\tfrac{2\\pi}{3}"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin(2\\arccos t)=2\\sin(\\arccos t)\\cos(\\arccos t)=2\\sqrt{1-t^2}\\,t\\ (t\\in[-1,1])"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "画单位圆+主值域，先定范围再取坐标/符号。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.6 三角方程（与不等式）"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "通解模版："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\cos\\theta=c\\Rightarrow\\theta=\\pm\\arccos c+2k\\pi"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin\\theta=c\\Rightarrow\\theta=2k\\pi+(-1)^k\\arcsin c"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\tan\\theta=c\\Rightarrow\\theta=k\\pi+\\arctan c\\ (k\\in\\mathbb Z)"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "\\sin2x=\\cos x"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "；"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "\\cos^2 2\\theta+4\\sin^2\\theta=4"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "；"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "\\tan x+\\tan2x=0"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "统一到单一三角函数，再解基本方程，最后用周期性写通解。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "有区间时先限制到给定区间，再由周期扩展。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "利用积化和差/和差化积把乘积转和差以便判零。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3.7 进阶技巧：辅助角与 t-代换"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "purple",
+        "is_toggleable": false
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "辅助角 (subsidiary angle)："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "A\\sin x+B\\cos x=R\\sin(x+c)\\ \\text{或}\\ R\\cos(x+c)"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "R=\\sqrt{A^2+B^2},\\ \\cos c=\\frac{A}{R},\\ \\sin c=\\frac{B}{R}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "t-代换 (Weierstrass)：设 "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "t=\tan(x/2)"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📑"
+        },
+        "color": "blue_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\sin x=\\frac{2t}{1+t^2},\\ \\cos x=\\frac{1-t^2}{1+t^2},\\ \\tan x=\\frac{2t}{1-t^2}"
+      }
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "例题："
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " "
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          },
+          {
+            "type": "equation",
+            "equation": {
+              "expression": "\\frac{\\sin x+\\cos x}{1+\\sin x}"
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " 化为 t 的有理式"
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "🧪"
+        },
+        "color": "purple_background"
+      }
+    },
+    {
+      "type": "equation",
+      "equation": {
+        "expression": "\\frac{\\sin x+\\cos x}{1+\\sin x}=\\frac{\\frac{2t}{1+t^2}+\\frac{1-t^2}{1+t^2}}{1+\\frac{2t}{1+t^2}}=\\frac{-t^2+2t+1}{(1+t)^2}"
+      }
+    },
+    {
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "解题技巧"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "color": "green_background",
+        "children": [
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "先算 R 与 c，再改写为 R\\sin(x+c)/R\\cos(x+c) 统一处理最大/最小与方程。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          },
+          {
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "t-代换把三角有理式转为有理函数，利于积分与代数化简。"
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  }
+                }
+              ],
+              "color": "default"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "divider",
+      "divider": {}
+    },
+    {
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "小结：弧度/单位圆/CAST、图像参数、恒等式族、反函数主值域、三角方程通解、辅助角与 t-代换。"
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            }
+          }
+        ],
+        "icon": {
+          "type": "emoji",
+          "emoji": "📚"
+        },
+        "color": "yellow_background"
+      }
+    }
+  ]
+}
